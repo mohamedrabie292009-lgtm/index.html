@@ -737,15 +737,19 @@
             alert("شكراً لك يا " + name + "، تم إرسال رسالتك بنجاح وسنتواصل معك قريباً!");
             document.getElementById("client-contact-form").reset();
         }
-
-        // 3. بوابة الدخول المحمية بالإدارة
+// بوابة الدخول المحمية
         function openAdminPortal() {
-            const enteredPin = prompt("يرجى إدخال رمز بوابة التعديل:");
+            let enteredPin = prompt("يرجى إدخال رمز بوابة التعديل:");
+            if (!enteredPin) return;
+
+            // تحويل الأرقام العربية إلى إنجليزية وإزالة أي مسافات
+            enteredPin = enteredPin.trim().replace(/[٠-٩]/g, d => "٠١٢٣٤٥٦٧٨٩".indexOf(d));
+
             if (enteredPin === ADMIN_PIN) {
                 renderMessages();
                 loadCurrentInputs();
                 document.getElementById("admin-modal").style.display = "flex";
-            } else if (enteredPin !== null) {
+            } else {
                 alert("رمز المرور غير صحيح! تم رفض الوصول.");
             }
         }
@@ -754,17 +758,19 @@
             document.getElementById("admin-modal").style.display = "none";
         }
 
-        // تبديل ألسنة الإدارة
+        // تبديل التبويبات
         function switchTab(tabName) {
             document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
             document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
-            if(tabName === 'inbox') {
-                document.querySelector(".tab-btn:nth-child(1)").classList.add("active");
+            if (tabName === 'inbox') {
+                document.querySelectorAll(".tab-btn")[0].classList.add("active");
                 document.getElementById("tab-inbox").classList.add("active");
             } else {
-                document.querySelector(".tab-btn:nth-child(2)").classList.add("active");
+                document.querySelectorAll(".tab-btn")[1].classList.add("active");
                 document.getElementById("tab-settings").classList.add("active");
             }
+        }
+
         }
 
         // 4. عرض وإدارة الرسائل
