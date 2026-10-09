@@ -430,4 +430,461 @@
         }
 
         .editable-active {
-            outline: 2px dashed var(--neon-cyan) !important
+            outline: 2px dashed var(--neon-cyan) !important;
+            cursor: text;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo">CREATIVE TEAM</div>
+        <ul class="nav-links">
+            <li><a href="#web-designers">المواقع</a></li>
+            <li><a href="#graphic-designers">الجرافيك</a></li>
+            <li><a href="#school-section">مقرنا</a></li>
+            <li><a href="#contact-section">تواصل</a></li>
+            <li><button class="admin-trigger-btn" id="open-login-btn"><i class="fa-solid fa-lock"></i> بوابة التعديل</button></li>
+        </ul>
+    </nav>
+
+    <!-- المقدمة وعداد الزيارات -->
+    <header class="hero">
+        <h1 class="editable-content" id="hero-title">نخبة الإبداع الرقمي و<span>الذكاء الاصطناعي</span></h1>
+        <p class="editable-content" id="hero-desc">فريق متخصص يجمع بين تقنيات برمجة واجهات الويب، وصناعة المحتوى البصري المتقدم، والمونتاج السينمائي الاحترافي لتنفيذ مشروعات رقمية استثنائية.</p>
+        <div class="visitor-badge">
+            <i class="fa-solid fa-eye"></i> إجمالي الزيارات: <span id="visit-counter">0</span>
+        </div>
+    </header>
+
+    <!-- قسم مصممي المواقع -->
+    <section id="web-designers">
+        <div class="section-header">
+            <h2 class="section-title editable-content" id="title-web">قسم تصميم وتطوير المواقع</h2>
+            <p class="section-desc editable-content" id="desc-web">هندسة وبرمجة واجهات الويب الذكية وتجارب المستخدم العصرية</p>
+        </div>
+
+        <div class="cards-grid">
+            <!-- محمد ربيع -->
+            <div class="member-card">
+                <div class="avatar-wrap">
+                    <img src="moo.png" data-person="rabie" alt="محمد ربيع" class="profile-img">
+                </div>
+                <h3 class="member-name editable-content" id="name-rabie-web">Mohamed Rabie</h3>
+                <div class="member-role editable-content" id="role-rabie-web">Web Designer & AI Specialist</div>
+                <p class="member-bio editable-content" id="bio-rabie-web">متخصص في تصميم وتطوير مواقع الويب الاحترافية، وإنشاء فيديوهات الذكاء الاصطناعي، وعمل التصاميم الرقمية العصرية.</p>
+                <a href="https://wa.me/201019497832" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" data-phone="rabie">
+                    <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
+                </a>
+            </div>
+
+            <!-- عبد الله كساب -->
+            <div class="member-card">
+                <div class="avatar-wrap">
+                    <img src="abdallah.kasab.png" data-person="kasab" alt="عبد الله كساب" class="profile-img">
+                </div>
+                <h3 class="member-name editable-content" id="name-kasab-web">Abdallah Kasab</h3>
+                <div class="member-role editable-content" id="role-kasab-web">Web Designer & AI Specialist</div>
+                <p class="member-bio editable-content" id="bio-kasab-web">متخصص في تصميم المواقع، توليد فيديوهات وتقنيات الذكاء الاصطناعي، وصناعة الهويات البصرية المتكاملة.</p>
+                <a href="https://wa.me/201507647203" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" data-phone="kasab">
+                    <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مصممي الجرافيك والمونتاج -->
+    <section id="graphic-designers">
+        <div class="section-header">
+            <h2 class="section-title editable-content" id="title-gfx">قسم تصميم الجرافيك والمونتاج</h2>
+            <p class="section-desc editable-content" id="desc-gfx">ابتكار الهويات البصرية، المونتاج الاحترافي، والتصاميم ثلاثية الأبعاد</p>
+        </div>
+
+        <div class="cards-grid">
+            <!-- محمد ربيع -->
+            <div class="member-card">
+                <div class="avatar-wrap">
+                    <img src="moo.png" data-person="rabie" alt="محمد ربيع" class="profile-img">
+                </div>
+                <h3 class="member-name editable-content" id="name-rabie-gfx">Mohamed Rabie</h3>
+                <div class="member-role editable-content" id="role-rabie-gfx">Graphic & AI Video Creator</div>
+                <p class="member-bio editable-content" id="bio-rabie-gfx">تصميم جرافيك احترافي، فيديوهات تفاعلية بالذكاء الاصطناعي، وتنسيق الحملات الإعلانية البصرية.</p>
+                <a href="https://wa.me/201019497832" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" data-phone="rabie">
+                    <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
+                </a>
+            </div>
+
+            <!-- عبد الله كساب -->
+            <div class="member-card">
+                <div class="avatar-wrap">
+                    <img src="abdallah.kasab.png" data-person="kasab" alt="عبد الله كساب" class="profile-img">
+                </div>
+                <h3 class="member-name editable-content" id="name-kasab-gfx">Abdallah Kasab</h3>
+                <div class="member-role editable-content" id="role-kasab-gfx">Graphic & AI Video Creator</div>
+                <p class="member-bio editable-content" id="bio-kasab-gfx">تنفيذ تصميمات جرافيك ذات جودة فائقة، تحريك الشعارات وإنتاج وسائط الذكاء الاصطناعي المبتكرة.</p>
+                <a href="https://wa.me/201507647203" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" data-phone="kasab">
+                    <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
+                </a>
+            </div>
+
+            <!-- أنس أيمن -->
+            <div class="member-card">
+                <div class="avatar-wrap">
+                    <img src="anas.png" data-person="anas" alt="أنس أيمن" class="profile-img">
+                </div>
+                <h3 class="member-name editable-content" id="name-anas">Anas Ayman</h3>
+                <div class="member-role editable-content" id="role-anas">Video Editor & Graphic Designer</div>
+                <p class="member-bio editable-content" id="bio-anas">متخصص في المونتاج السينمائي الاحترافي، معالجة الصور الرقمية، وصناعة التصاميم الإبداعية.</p>
+                <a href="https://wa.me/201099279079" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" data-phone="anas">
+                    <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
+                </a>
+            </div>
+
+            <!-- رضا جابر -->
+            <div class="member-card">
+                <div class="avatar-wrap">
+                    <img src="reda.png" data-person="reda" alt="رضا جابر" class="profile-img">
+                </div>
+                <h3 class="member-name editable-content" id="name-reda">Reda Gaber</h3>
+                <div class="member-role editable-content" id="role-reda">Video Editor & Graphic Designer</div>
+                <p class="member-bio editable-content" id="bio-reda">متخصص في تصميم المونتاج والصور والتصاميم الجرافيكية الاحترافية وإخراج المحتوى البصري.</p>
+                <a href="https://wa.me/201271335017" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" data-phone="reda">
+                    <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم موقع المدرسة -->
+    <section id="school-section" class="school-container">
+        <div class="section-header">
+            <h2 class="section-title editable-content" id="title-school">مقرنا الأكاديمي</h2>
+            <p class="section-desc editable-content" id="desc-school">المدرسة الفنية التجريبية لمساعدي الإشراف والتدريب المهني - فرع المنصورة</p>
+        </div>
+        <div class="school-card">
+            <p class="editable-content" id="school-info-text">نفخر بانتمائنا وتدريبنا الاحترافي بالمنصورة لصقل المهارات الرقمية والتقنية.</p>
+            <iframe 
+                class="map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.847155627755!2d31.3784704!3d31.040948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79dcf716c029d%3A0xb3089487c9f8742b!2z2KfZhNmF2K_Ysdiz2Kkg2KfZhNmF2FnbZitipINin2YTYqtis2LHZitio2YrYqSDYqNin2YTZhdmG2LXZiNix2Kk!5e0!3m2!1sar!2seg!4v1700000000000!5m2!1sar!2seg" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- قسم إرسال رسالة من الزوار -->
+    <section id="contact-section" class="contact-section">
+        <div class="section-header">
+            <h2 class="section-title">أرسل لنا رسالة</h2>
+            <p class="section-desc">يسعدنا استقبال مقترحاتكم واستفساراتكم في أي وقت</p>
+        </div>
+        <div class="contact-card">
+            <form id="client-contact-form">
+                <div class="form-group">
+                    <label>الاسم بالكامل:</label>
+                    <input type="text" id="sender-name" class="form-control" placeholder="أدخل اسمك الكريم" required>
+                </div>
+                <div class="form-group">
+                    <label>رقم الهاتف / الواتساب:</label>
+                    <input type="tel" id="sender-phone" class="form-control" placeholder="مثال: 01012345678" required>
+                </div>
+                <div class="form-group">
+                    <label>الرسالة:</label>
+                    <textarea id="sender-msg" class="form-control" rows="4" placeholder="اكتب تفاصيل استفسارك أو طلبك هنا..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> إرسال الرسالة الآن</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 1. نافذة إدخال كلمة المرور (Login Modal) -->
+    <div id="login-modal" class="modal-overlay">
+        <div class="modal-box login-box">
+            <span class="close-modal" id="close-login-btn">&times;</span>
+            <h3 style="color: var(--neon-cyan); margin-bottom: 0.8rem;"><i class="fa-solid fa-lock"></i> تسجيل الدخول</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">أدخل رمز بوابة التعديل</p>
+            <div class="form-group">
+                <input type="password" id="pin-input" class="form-control" placeholder="أدخل 200929" style="text-align: center; font-size: 1.1rem; letter-spacing: 2px;">
+            </div>
+            <button class="submit-btn" id="verify-pin-btn">دخول</button>
+        </div>
+    </div>
+
+    <!-- 2. نافذة لوحة التحكم والإدارة (Admin Dashboard) -->
+    <div id="admin-modal" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal" id="close-admin-btn">&times;</span>
+            <h3 style="color: var(--neon-cyan); margin-bottom: 1rem;"><i class="fa-solid fa-shield-halved"></i> لوحة التحكم</h3>
+
+            <div class="admin-nav-tabs">
+                <button class="tab-btn active" id="tab-inbox-btn"><i class="fa-solid fa-envelope"></i> الرسائل</button>
+                <button class="tab-btn" id="tab-settings-btn"><i class="fa-solid fa-pen-to-square"></i> إدارة المحتوى</button>
+            </div>
+
+            <!-- تبويب الرسائل الواردة -->
+            <div id="tab-inbox" class="tab-content active">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h4>الوارد (<span id="messages-count">0</span>):</h4>
+                    <button class="btn-danger" id="clear-msgs-btn" style="font-size: 0.8rem;"><i class="fa-solid fa-trash"></i> مسح الكل</button>
+                </div>
+                <div id="messages-list"></div>
+            </div>
+
+            <!-- تبويب تعديل الموقع وإعدادات الفريق -->
+            <div id="tab-settings" class="tab-content">
+                <div class="form-group">
+                    <label>تعديل نصوص الصفحة:</label>
+                    <button id="toggle-edit-btn" class="submit-btn" style="background: #334168;">
+                        <i class="fa-solid fa-pen"></i> تفعيل وضع التعديل المباشر
+                    </button>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid #232b45; margin: 1rem 0;">
+
+                <h4 style="color: var(--neon-cyan); margin-bottom: 0.8rem; font-size: 0.95rem;">تحديث الصور والأرقام:</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                    <div class="form-group">
+                        <label>صورة محمد ربيع:</label>
+                        <input type="text" id="img-input-rabie" class="form-control" placeholder="moo.png">
+                    </div>
+                    <div class="form-group">
+                        <label>واتساب محمد ربيع:</label>
+                        <input type="text" id="phone-input-rabie" class="form-control" placeholder="201019497832">
+                    </div>
+
+                    <div class="form-group">
+                        <label>صورة عبد الله كساب:</label>
+                        <input type="text" id="img-input-kasab" class="form-control" placeholder="abdallah.kasab.png">
+                    </div>
+                    <div class="form-group">
+                        <label>واتساب عبد الله كساب:</label>
+                        <input type="text" id="phone-input-kasab" class="form-control" placeholder="201507647203">
+                    </div>
+
+                    <div class="form-group">
+                        <label>صورة أنس أيمن:</label>
+                        <input type="text" id="img-input-anas" class="form-control" placeholder="anas.png">
+                    </div>
+                    <div class="form-group">
+                        <label>واتساب أنس أيمن:</label>
+                        <input type="text" id="phone-input-anas" class="form-control" placeholder="201099279079">
+                    </div>
+
+                    <div class="form-group">
+                        <label>صورة رضا جابر:</label>
+                        <input type="text" id="img-input-reda" class="form-control" placeholder="reda.png">
+                    </div>
+                    <div class="form-group">
+                        <label>واتساب رضا جابر:</label>
+                        <input type="text" id="phone-input-reda" class="form-control" placeholder="201271335017">
+                    </div>
+                </div>
+
+                <div class="action-row">
+                    <button class="btn-success" id="save-settings-btn"><i class="fa-solid fa-floppy-disk"></i> حفظ التحديثات</button>
+                    <button class="btn-danger" id="reset-visits-btn"><i class="fa-solid fa-rotate-right"></i> تصفير الزوار</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- برمجة الجافاسكريبت الموثوقة -->
+    <script>
+        const ADMIN_PIN = "200929";
+        let isInlineEditing = false;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // 1. عداد الزيارات
+            let visits = parseInt(localStorage.getItem("site_visits_count") || "105");
+            visits += 1;
+            localStorage.setItem("site_visits_count", visits);
+            const counterEl = document.getElementById("visit-counter");
+            if (counterEl) counterEl.textContent = visits.toLocaleString('ar-EG');
+
+            // تحميل المحفوظات
+            loadSavedContent();
+
+            // 2. نموذج إرسال الرسائل
+            const contactForm = document.getElementById("client-contact-form");
+            if (contactForm) {
+                contactForm.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById("sender-name").value.trim();
+                    const phone = document.getElementById("sender-phone").value.trim();
+                    const msg = document.getElementById("sender-msg").value.trim();
+
+                    if (!name || !phone || !msg) return;
+
+                    const newMsg = {
+                        id: Date.now(),
+                        name: name,
+                        phone: phone,
+                        message: msg,
+                        date: new Date().toLocaleString('ar-EG')
+                    };
+
+                    const msgs = JSON.parse(localStorage.getItem("site_client_messages") || "[]");
+                    msgs.unshift(newMsg);
+                    localStorage.setItem("site_client_messages", JSON.stringify(msgs));
+
+                    alert("شكراً لك يا " + name + "، تم إرسال رسالتك بنجاح!");
+                    contactForm.reset();
+                });
+            }
+
+            // 3. النوافذ المنبثقة
+            const openLoginBtn = document.getElementById("open-login-btn");
+            const loginModal = document.getElementById("login-modal");
+            const closeLoginBtn = document.getElementById("close-login-btn");
+            const adminModal = document.getElementById("admin-modal");
+            const closeAdminBtn = document.getElementById("close-admin-btn");
+            const pinInput = document.getElementById("pin-input");
+            const verifyPinBtn = document.getElementById("verify-pin-btn");
+
+            if (openLoginBtn) {
+                openLoginBtn.addEventListener("click", () => {
+                    loginModal.style.display = "flex";
+                    pinInput.value = "";
+                    pinInput.focus();
+                });
+            }
+
+            if (closeLoginBtn) {
+                closeLoginBtn.addEventListener("click", () => {
+                    loginModal.style.display = "none";
+                });
+            }
+
+            if (closeAdminBtn) {
+                closeAdminBtn.addEventListener("click", () => {
+                    adminModal.style.display = "none";
+                });
+            }
+
+            function checkPin() {
+                let entered = pinInput.value.trim();
+                entered = entered.replace(/[٠-٩]/g, d => "٠١٢٣٤٥٦٧٨٩".indexOf(d));
+
+                if (entered === ADMIN_PIN) {
+                    loginModal.style.display = "none";
+                    adminModal.style.display = "flex";
+                    renderMessages();
+                    loadCurrentInputs();
+                } else {
+                    alert("رمز المرور غير صحيح! الرمز هو: 200929");
+                    pinInput.value = "";
+                    pinInput.focus();
+                }
+            }
+
+            if (verifyPinBtn) verifyPinBtn.addEventListener("click", checkPin);
+            if (pinInput) {
+                pinInput.addEventListener("keypress", (e) => {
+                    if (e.key === "Enter") checkPin();
+                });
+            }
+
+            // 4. تبديل التبويبات
+            const tabInboxBtn = document.getElementById("tab-inbox-btn");
+            const tabSettingsBtn = document.getElementById("tab-settings-btn");
+            const tabInbox = document.getElementById("tab-inbox");
+            const tabSettings = document.getElementById("tab-settings");
+
+            if (tabInboxBtn && tabSettingsBtn) {
+                tabInboxBtn.addEventListener("click", () => {
+                    tabInboxBtn.classList.add("active");
+                    tabSettingsBtn.classList.remove("active");
+                    tabInbox.classList.add("active");
+                    tabSettings.classList.remove("active");
+                });
+
+                tabSettingsBtn.addEventListener("click", () => {
+                    tabSettingsBtn.classList.add("active");
+                    tabInboxBtn.classList.remove("active");
+                    tabSettings.classList.add("active");
+                    tabInbox.classList.remove("active");
+                });
+            }
+
+            // 5. مسح الرسائل
+            const clearMsgsBtn = document.getElementById("clear-msgs-btn");
+            if (clearMsgsBtn) {
+                clearMsgsBtn.addEventListener("click", () => {
+                    if (confirm("هل تريد بالتأكيد حذف كل الرسائل؟")) {
+                        localStorage.removeItem("site_client_messages");
+                        renderMessages();
+                    }
+                });
+            }
+
+            // 6. تصفير العداد
+            const resetVisitsBtn = document.getElementById("reset-visits-btn");
+            if (resetVisitsBtn) {
+                resetVisitsBtn.addEventListener("click", () => {
+                    if (confirm("هل تريد تصفير عداد الزيارات؟")) {
+                        localStorage.setItem("site_visits_count", "0");
+                        if (counterEl) counterEl.textContent = "0";
+                        alert("تم تصفير العداد!");
+                    }
+                });
+            }
+
+            // 7. التعديل المباشر
+            const toggleEditBtn = document.getElementById("toggle-edit-btn");
+            if (toggleEditBtn) {
+                toggleEditBtn.addEventListener("click", () => {
+                    isInlineEditing = !isInlineEditing;
+                    const els = document.querySelectorAll(".editable-content");
+
+                    els.forEach(el => {
+                        el.contentEditable = isInlineEditing;
+                        if (isInlineEditing) el.classList.add("editable-active");
+                        else el.classList.remove("editable-active");
+                    });
+
+                    if (isInlineEditing) {
+                        toggleEditBtn.innerHTML = `<i class="fa-solid fa-check"></i> حفظ التعديلات`;
+                        toggleEditBtn.style.background = "var(--success-color)";
+                        adminModal.style.display = "none";
+                        alert("وضع التعديل مفعل! اضغط على أي نص لتعديله ثم افتح البوابة واضغط حفظ.");
+                    } else {
+                        const texts = {};
+                        document.querySelectorAll(".editable-content").forEach(el => {
+                            texts[el.id] = el.innerHTML;
+                        });
+                        localStorage.setItem("site_saved_texts", JSON.stringify(texts));
+                        toggleEditBtn.innerHTML = `<i class="fa-solid fa-pen"></i> تفعيل وضع التعديل المباشر`;
+                        toggleEditBtn.style.background = "#334168";
+                        alert("تم حفظ جميع التعديلات!");
+                    }
+                });
+            }
+
+            // 8. حفظ إعدادات الصور والأرقام
+            const saveSettingsBtn = document.getElementById("save-settings-btn");
+            if (saveSettingsBtn) {
+                saveSettingsBtn.addEventListener("click", () => {
+                    const cfg = JSON.parse(localStorage.getItem("site_team_config") || "{}");
+                    ['rabie', 'kasab', 'anas', 'reda'].forEach(p => {
+                        const imgVal = document.getElementById(`img-input-${p}`).value.trim();
+                        const phoneVal = document.getElementById(`phone-input-${p}`).value.trim();
+                        if (!cfg[p]) cfg[p] = {};
+                        if (imgVal) cfg[p].img = imgVal;
+                        if (phoneVal) cfg[p].phone = phoneVal;
+                    });
+                    localStorage.setItem("site_team_config", JSON.stringify(cfg));
+                    applyTeamConfig(cfg);
+                    alert("تم حفظ التحديثات!");
+                    adminModal.style.display = "none";
+                });
+            }
+        });
+
+        function renderMessages() {
+            const list = document.getElementById("messages-list");
+            const msgs = JSON.parse(localStorage.getItem("site_client_messages") || "[]");
+            document.getElementById("messages-count").textContent = msgs.length;
+
+            if (msgs.length === 0) {
+                list.innerHTML
