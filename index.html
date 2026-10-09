@@ -692,7 +692,6 @@
                 <div class="action-row">
                     <button class="btn-success" onclick="saveSettingsData()"><i class="fa-solid fa-floppy-disk"></i> حفظ التحديثات</button>
                     <button class="btn-danger" onclick="resetVisits()"><i class="fa-solid fa-rotate-right"></i> تصفير عداد الزوار</button>
-                </div>
             </div>
         </div>
     </div>
@@ -711,12 +710,6 @@
             document.getElementById("visit-counter").textContent = visits.toLocaleString('ar-EG');
             loadSavedContent();
         });
-
-        function resetVisits() {
-            if(confirm("هل أنت متأكد من تصفير عداد الزيارات؟")) {
-                localStorage.setItem("site_visits_count", "0");
-                document.getElementById("visit-counter").textContent = "0";
-                alert("تم تصفير العداد بنجاح!");
             }
         }
 
